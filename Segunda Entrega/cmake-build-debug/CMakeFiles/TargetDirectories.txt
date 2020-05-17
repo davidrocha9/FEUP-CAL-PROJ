@@ -1,0 +1,3 @@
+/home/davidrocha/Desktop/Segunda Entrega/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/davidrocha/Desktop/Segunda Entrega/cmake-build-debug/CMakeFiles/Segunda_Entrega.dir
+/home/davidrocha/Desktop/Segunda Entrega/cmake-build-debug/CMakeFiles/edit_cache.dir
