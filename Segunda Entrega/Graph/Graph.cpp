@@ -1,5 +1,7 @@
 #include <iostream>
 #include <utility>
+#include <list>
+#include <climits>
 #include "Graph.h"
 
 Edge::Edge(int destID, double weight, double slope, double dur, int dif) {
@@ -65,8 +67,8 @@ void Vertex::setY(int y) {
     this->y = y;
 }
 
-void Vertex::setVisited() {
-    this->visited = true;
+void Vertex::setVisited(bool v) {
+    this->visited = v;
 }
 
 vector<Edge> Vertex::getAdj() {
@@ -86,9 +88,38 @@ void Vertex::setType(string t) {
     this->type = std::move(t);
 }
 
+void Vertex::setDist(int dist) {
+    this->dist = dist;
+}
+
+int Vertex::getDist() {
+    return dist;
+}
+
+void Vertex::setPath(Vertex *path) {
+    this->path = path;
+}
+
+Vertex *Vertex::getPath() {
+    return path;
+}
+
+bool Vertex::operator<(Vertex &vertex) const {
+    return (this->dist - this->distSourcToDest + this->distFromDest) < (vertex.dist - this->distSourcToDest + vertex.distFromDest);
+}
+
 
 Graph::Graph() {
 
+}
+
+void Graph::initializeGraph() {
+    for(auto v: vertexSet) {
+        v->dist = INT_MAX;
+        v->path = nullptr;
+        v->distFromDest = 0;
+        v->distSourcToDest = 0;
+    }
 }
 
 double Graph::getMinX() const {
@@ -109,6 +140,10 @@ double Graph::getMaxY() const {
 
 vector<Vertex *> Graph::getVertexSet() {
     return vertexSet;
+}
+
+void Graph::setnumNodes(int numNodes){
+    this->numNodes = numNodes;
 }
 
 Vertex *Graph::findVertex(const int &id) const {
@@ -150,3 +185,9 @@ bool Graph::addEdge(const int &sourc, const int &dest, const double &weight, con
     v1->addEdge(dest,weight,slope,dur,dif);
     return true;
 }
+
+void Graph::setVertexSet(vector<Vertex *> v) {
+    this->vertexSet = v;
+}
+
+//Algorithms

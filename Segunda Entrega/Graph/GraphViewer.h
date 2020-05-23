@@ -17,6 +17,7 @@ GraphViewer * createWindow(Graph g);
 #pragma once
 #include "../Graph/Graph.h"
 #include "../lib/graphviewer.h"
+#include <algorithm>
 
 class graphDisplay {
 private:
@@ -27,7 +28,7 @@ private:
 public:
     graphDisplay();
     void setGraph(Graph &graph);
-    void show();
+    void show(vector<vector<int>> paths);
 
     graphDisplay(Graph graph, int i, int i1);
 };

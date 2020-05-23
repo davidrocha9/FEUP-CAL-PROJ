@@ -1,36 +1,32 @@
 #include "FileReader.h"
 #include <fstream>
 #include <iostream>
+#include <algorithm>
 #include "math.h"
 #include "../Graph/Graph.h"
 #include "../Graph/GraphViewer.h"
+#include "../Algorithms/dijkstra.h"
 
 using namespace std;
 
-string makeLower(string s){
-    for (char & x : s){
-        x = tolower(x);
-    }
-    return s;
-}
-
-void createGraph(const string& cityName){
+Graph createGraph(unsigned int dif) {
     Graph graph;
-    readNodes(graph, cityName);
-    readEdges(graph, cityName);
-    readTags(graph, cityName);
+    readNodes(graph);
+    readEdges(graph, dif);
+    readTags(graph);
 
-    graphDisplay gd(graph, 1920, 1080);
+    /*graphDisplay gd(graph, 1920, 1080);
     gd.show();
 
-    getchar();
+    getchar();*/
 
+    return graph;
 }
 
 int getDifficulty(double s){
-    if (s < 4)
+    if (abs(s) < 14)
         return 1;
-    else if (s < 8)
+    else if (s < 19)
         return 2;
     return 3;
 }
@@ -58,10 +54,11 @@ double getSlope(){
     return slopeNum/slopeDen;
 }
 
-void readNodes(Graph &graph, string cityName) {
+void readNodes(Graph &graph) {
     ifstream file;
-    string lowerName = makeLower(cityName);
-    string fileName = "../Maps/PortugalMaps/" + cityName + "/nodes_x_y_" + lowerName + ".txt";
+    //string fileName = "../Maps/PortugalMaps/" + cityName + "/nodes_x_y_" + lowerName + ".txt";
+    string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_nodes_xy.txt";
+    //string fileName = "../Maps/GridGraphs/4x4/nodes.txt";
     file.open(fileName);
     string temp = "";
     int id, var = 0;
@@ -69,6 +66,7 @@ void readNodes(Graph &graph, string cityName) {
 
     if(file.is_open()){
         getline(file, temp);
+        graph.setnumNodes(stoi(temp));
         while(getline(file, temp)){
             while(temp.find(',') != string::npos){
                 int index = temp.find(',');
@@ -76,7 +74,7 @@ void readNodes(Graph &graph, string cityName) {
                     id = stoi(temp.substr(1, index));
                     var++;
                 } else {
-                    x = stoi(temp.substr(1, index));
+                    x = stoi(temp.substr(0, index));
                 }
                 temp = temp.erase(0, index + 1);
             }
@@ -88,10 +86,11 @@ void readNodes(Graph &graph, string cityName) {
     file.close();
 }
 
-void readEdges(Graph &graph, string cityName) {
+void readEdges(Graph &graph, unsigned int dif) {
     ifstream file;
-    string lowerName = makeLower(cityName);
-    string fileName = "../Maps/PortugalMaps/" + cityName + "/edges_" + lowerName + ".txt";
+    //string fileName = "../Maps/PortugalMaps/" + cityName + "/edges_" + lowerName + ".txt";
+    string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_edges.txt";
+    //string fileName = "../Maps/GridGraphs/4x4/edges.txt";
     file.open(fileName);
     string temp = "";
     int src, dest, difficulty;
@@ -109,35 +108,22 @@ void readEdges(Graph &graph, string cityName) {
             slope = getSlope();
             weight = getDistance(src, dest, graph, slope);
             difficulty = getDifficulty(slope);
-            graph.addEdge(src, dest, weight, slope, getDur(weight, slope), difficulty);
-            graph.addEdge(dest, src, weight, -slope, getDur(weight, slope), difficulty);
+            if (difficulty <= dif) {
+                graph.addEdge(src, dest, weight, slope, getDur(weight, slope)/60.0, difficulty);
+                graph.addEdge(dest, src, weight, -slope, getDur(weight, slope)/60.0, difficulty);
+            }
         }
     }
     file.close();
 }
 
-void readTags(Graph &graph, string cityName) {
+void readTags(Graph &graph) {
     ifstream file;
-    string lowerName = makeLower(cityName);
-    string fileName = "../Maps/TagExamples/" + cityName + "/t03_tags_" + lowerName + ".txt";
+    //string fileName = "../Maps/TagExamples/" + cityName + "/t03_tags_" + lowerName + ".txt";
+    string fileName = "../Maps/TagExamples/Penafiel/t10_tags_penafiel.txt";
     file.open(fileName);
     string temp = "", tagName = "";
 
-    if(file.is_open()){
-        getline(file, temp);
-        while(getline(file, temp)){
-            if (temp.find("tourism") != string::npos) {
-                tagName = temp.erase(0, 8);
-                getline(file, temp);
-            } else
-                graph.findVertex(stoi(temp))->setType(tagName);
-        }
-    }
-
-    file.close();
-
-    fileName = "../Maps/TagExamples/" + cityName + "/t10_tags_" + lowerName + ".txt";
-    file.open(fileName);
     if(file.is_open()){
         getline(file, temp);
         while(getline(file, temp)){
@@ -148,5 +134,9 @@ void readTags(Graph &graph, string cityName) {
                 graph.findVertex(stoi(temp))->setType(tagName);
         }
     }
+
+    //graph.findVertex(18)->setType("restaurant\r");
+    //graph.findVertex(1)->setType("entrance\r");
+
     file.close();
 }

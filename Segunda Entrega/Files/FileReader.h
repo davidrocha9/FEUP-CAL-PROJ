@@ -4,9 +4,9 @@
 #include <string>
 #include "../Graph/Graph.h"
 
-void createGraph(const string& cityName);
-void readNodes(Graph &graph, string cityName);
-void readEdges(Graph &graph, string cityName);
-void readTags(Graph &graph, string cityName);
+Graph createGraph(unsigned int dif);
+void readNodes(Graph &graph);
+void readEdges(Graph &graph, unsigned int dif);
+void readTags(Graph &graph);
 
 #endif //SEGUNDA_ENTREGA_FILEREADER_H
