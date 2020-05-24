@@ -62,7 +62,7 @@ void graphDisplay::show(vector<vector<int>> paths) {
         xPercent = (vertex->getX() - graph.getMinX())/(graph.getMaxX() - graph.getMinX())*0.9 + 0.05;
 
         gv->addNode(vertex->getId(), (int) (xPercent * width), (int) (yPercent * height));
-        gv->setVertexLabel(vertex->getId(), to_string(vertex->getId()));
+        //gv->setVertexLabel(vertex->getId(), to_string(vertex->getId()));
     }
 
     int id = 0, count = 0;
@@ -94,6 +94,60 @@ void graphDisplay::show(vector<vector<int>> paths) {
                     gv->setEdgeColor(id, "blue");
                     gv->setEdgeThickness(id, 5);
                 }
+            }
+
+            gv->addEdge(id,vertex->getId(),edge.getDestID(), 0);
+            id++;
+        }
+    }
+}
+
+void graphDisplay::showConnectivity(vector<int> v) {
+    gv->defineVertexColor("yellow");
+    gv->defineEdgeCurved(false);
+    gv->defineVertexSize(4);
+    gv->createWindow(width, height);
+
+    double yPercent, xPercent;
+
+    for (Vertex* vertex: graph.getVertexSet()){
+        if (vertex->getType() == "restaurant\r"){
+            gv->setVertexColor(vertex->getId(), "red");
+            gv->setVertexSize(vertex->getId(), 15);
+        }
+        if (vertex->getType() == "entrance\r"){
+            gv->setVertexColor(vertex->getId(), "green");
+            gv->setVertexSize(vertex->getId(), 15);
+        }
+
+        if (find(v.begin(), v.end(), vertex->getId()) != v.end()){
+            gv->setVertexColor(vertex->getId(), "blue");
+            gv->setVertexSize(vertex->getId(), 15);
+        }
+
+        yPercent = 1.0 - ((vertex->getY()- graph.getMinY())/(graph.getMaxY() - graph.getMinY())*0.9 + 0.05);
+        xPercent = (vertex->getX() - graph.getMinX())/(graph.getMaxX() - graph.getMinX())*0.9 + 0.05;
+
+        gv->addNode(vertex->getId(), (int) (xPercent * width), (int) (yPercent * height));
+        //gv->setVertexLabel(vertex->getId(), to_string(vertex->getId()));
+    }
+
+    int id = 0, count = 0;
+
+    for (Vertex* vertex: graph.getVertexSet()){
+        for (Edge edge: vertex->getAdj()){
+            switch(edge.getDifficulty()){
+                case 1:
+                    gv->setEdgeColor(id, "green");
+                    break;
+                case 2:
+                    gv->setEdgeColor(id, "yellow");
+                    break;
+                case 3:
+                    gv->setEdgeColor(id, "red");
+                    break;
+                default:
+                    break;
             }
 
             gv->addEdge(id,vertex->getId(),edge.getDestID(), 0);

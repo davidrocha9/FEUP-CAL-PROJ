@@ -6,17 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
-queue
--
-../Graph/Graph.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-../Graph/MutablePriorityQueue.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
-string
--
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h
 ../Graph/Graph.h
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
 
@@ -48,43 +38,19 @@ algorithm
 vector
 -
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.h
-vector
--
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Utils.h
-../Graph/Graph.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
-string
--
-vector
--
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.cpp
-iostream
--
-pathGenerator.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
-../Algorithms/dijkstra.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
-Utils.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Utils.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.cpp
+connectivity.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.h
+../Algorithms/dfs.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h
 ../Graph/GraphViewer.h
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/GraphViewer.h
-../Files/FileReader.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
-Path.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.h
-math.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/math.h
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.h
+iostream
+-
 ../Graph/Graph.h
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-Worker.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
 
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.h
 cstdio

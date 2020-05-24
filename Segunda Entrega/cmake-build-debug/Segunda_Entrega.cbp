@@ -90,6 +90,12 @@
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/bfs.h">
 			<Option target="Segunda_Entrega"/>
 		</Unit>
+		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.cpp">
+			<Option target="Segunda_Entrega"/>
+		</Unit>
+		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h">
+			<Option target="Segunda_Entrega"/>
+		</Unit>
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.cpp">
 			<Option target="Segunda_Entrega"/>
 		</Unit>
@@ -145,6 +151,12 @@
 			<Option target="Segunda_Entrega"/>
 		</Unit>
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h">
+			<Option target="Segunda_Entrega"/>
+		</Unit>
+		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.cpp">
+			<Option target="Segunda_Entrega"/>
+		</Unit>
+		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.h">
 			<Option target="Segunda_Entrega"/>
 		</Unit>
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.cpp">

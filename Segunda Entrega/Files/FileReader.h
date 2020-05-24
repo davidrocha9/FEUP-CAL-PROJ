@@ -4,7 +4,7 @@
 #include <string>
 #include "../Graph/Graph.h"
 
-Graph createGraph(unsigned int dif);
+Graph createGraph(unsigned int dif, unsigned int randOrNot);
 void readNodes(Graph &graph);
 void readEdges(Graph &graph, unsigned int dif);
 void readTags(Graph &graph);

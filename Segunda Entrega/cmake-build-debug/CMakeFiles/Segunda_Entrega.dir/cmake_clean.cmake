@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o"
+  "CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Files/FileReader.cpp.o"
@@ -9,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Menus/Utils.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o"
+  "CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o"

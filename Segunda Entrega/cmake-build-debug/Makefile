@@ -150,6 +150,33 @@ Algorithms/bfs.cpp.s:
 	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.s
 .PHONY : Algorithms/bfs.cpp.s
 
+Algorithms/dfs.o: Algorithms/dfs.cpp.o
+
+.PHONY : Algorithms/dfs.o
+
+# target to build an object file
+Algorithms/dfs.cpp.o:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o
+.PHONY : Algorithms/dfs.cpp.o
+
+Algorithms/dfs.i: Algorithms/dfs.cpp.i
+
+.PHONY : Algorithms/dfs.i
+
+# target to preprocess a source file
+Algorithms/dfs.cpp.i:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.i
+.PHONY : Algorithms/dfs.cpp.i
+
+Algorithms/dfs.s: Algorithms/dfs.cpp.s
+
+.PHONY : Algorithms/dfs.s
+
+# target to generate assembly for a file
+Algorithms/dfs.cpp.s:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.s
+.PHONY : Algorithms/dfs.cpp.s
+
 Algorithms/dijkstra.o: Algorithms/dijkstra.cpp.o
 
 .PHONY : Algorithms/dijkstra.o
@@ -393,6 +420,33 @@ Menus/Worker.cpp.s:
 	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.s
 .PHONY : Menus/Worker.cpp.s
 
+Menus/connectivity.o: Menus/connectivity.cpp.o
+
+.PHONY : Menus/connectivity.o
+
+# target to build an object file
+Menus/connectivity.cpp.o:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o
+.PHONY : Menus/connectivity.cpp.o
+
+Menus/connectivity.i: Menus/connectivity.cpp.i
+
+.PHONY : Menus/connectivity.i
+
+# target to preprocess a source file
+Menus/connectivity.cpp.i:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.i
+.PHONY : Menus/connectivity.cpp.i
+
+Menus/connectivity.s: Menus/connectivity.cpp.s
+
+.PHONY : Menus/connectivity.s
+
+# target to generate assembly for a file
+Menus/connectivity.cpp.s:
+	$(MAKE) -f CMakeFiles/Segunda_Entrega.dir/build.make CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.s
+.PHONY : Menus/connectivity.cpp.s
+
 Menus/pathGenerator.o: Menus/pathGenerator.cpp.o
 
 .PHONY : Menus/pathGenerator.o
@@ -513,6 +567,9 @@ help:
 	@echo "... Algorithms/bfs.o"
 	@echo "... Algorithms/bfs.i"
 	@echo "... Algorithms/bfs.s"
+	@echo "... Algorithms/dfs.o"
+	@echo "... Algorithms/dfs.i"
+	@echo "... Algorithms/dfs.s"
 	@echo "... Algorithms/dijkstra.o"
 	@echo "... Algorithms/dijkstra.i"
 	@echo "... Algorithms/dijkstra.s"
@@ -540,6 +597,9 @@ help:
 	@echo "... Menus/Worker.o"
 	@echo "... Menus/Worker.i"
 	@echo "... Menus/Worker.s"
+	@echo "... Menus/connectivity.o"
+	@echo "... Menus/connectivity.i"
+	@echo "... Menus/connectivity.s"
 	@echo "... Menus/pathGenerator.o"
 	@echo "... Menus/pathGenerator.i"
 	@echo "... Menus/pathGenerator.s"

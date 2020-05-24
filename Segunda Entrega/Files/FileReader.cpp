@@ -9,16 +9,27 @@
 
 using namespace std;
 
-Graph createGraph(unsigned int dif) {
+Graph createGraph(unsigned int dif, unsigned int randOrNot) {
     Graph graph;
     readNodes(graph);
     readEdges(graph, dif);
-    readTags(graph);
 
-    /*graphDisplay gd(graph, 1920, 1080);
-    gd.show();
+    if (randOrNot == 2) {
+        srand(time(NULL));
+        for (int x = 0; x < 20; x++) {
+            int a = rand() % 3900;
+            if (graph.getVertexSet().at(a)->getType() == "") {
+                graph.getVertexSet().at(a)->setType("restaurant\r");
+            }
+        }
 
-    getchar();*/
+        for (int x = 0; x < 20; x++) {
+            int a = rand() % 3900;
+            if (graph.getVertexSet().at(a)->getType() == "") {
+                graph.getVertexSet().at(a)->setType("entrance\r");
+            }
+        }
+    } else readTags(graph);
 
     return graph;
 }
@@ -56,9 +67,7 @@ double getSlope(){
 
 void readNodes(Graph &graph) {
     ifstream file;
-    //string fileName = "../Maps/PortugalMaps/" + cityName + "/nodes_x_y_" + lowerName + ".txt";
     string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_nodes_xy.txt";
-    //string fileName = "../Maps/GridGraphs/4x4/nodes.txt";
     file.open(fileName);
     string temp = "";
     int id, var = 0;
@@ -88,9 +97,7 @@ void readNodes(Graph &graph) {
 
 void readEdges(Graph &graph, unsigned int dif) {
     ifstream file;
-    //string fileName = "../Maps/PortugalMaps/" + cityName + "/edges_" + lowerName + ".txt";
     string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_edges.txt";
-    //string fileName = "../Maps/GridGraphs/4x4/edges.txt";
     file.open(fileName);
     string temp = "";
     int src, dest, difficulty;

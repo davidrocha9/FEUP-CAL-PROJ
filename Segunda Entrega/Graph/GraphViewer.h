@@ -29,6 +29,7 @@ public:
     graphDisplay();
     void setGraph(Graph &graph);
     void show(vector<vector<int>> paths);
+    void showConnectivity(vector<int> v);
 
     graphDisplay(Graph graph, int i, int i1);
 };

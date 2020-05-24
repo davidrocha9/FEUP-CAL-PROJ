@@ -13,7 +13,7 @@ vector<int> getPathBack(int restaurant, vector<int> toRestaurant, Graph graph, i
 void choosePaths(Graph graph, unsigned int maxTime, int dif);
 bool sortExperience(Worker* w1, Worker* w2);
 void showPaths(vector<Worker*> workers);
-void start(vector<Worker*> &workers);
+void start(vector<Worker*> &workers, unsigned int randOrNot);
 
 
 #endif //SEGUNDA_ENTREGA_PATHGENERATOR_H

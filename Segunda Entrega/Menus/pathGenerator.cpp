@@ -13,9 +13,9 @@
 
 vector<int> restaurants;
 vector<int> entrances;
-Graph fullGraph = createGraph(3);
-Graph mediumGraph = createGraph(2);
-Graph easyGraph = createGraph(1);
+Graph fullGraph;
+Graph mediumGraph;
+Graph easyGraph;
 
 vector<Path> easyPaths;
 vector<Path> normalPaths;
@@ -196,10 +196,6 @@ bool checkPath(Path path){
 
 void filterPaths(Path p){
     vector<vector<int>> path = p.getPath();
-    /*restaurantID = path.at(0).back();
-    cout << restaurantID << endl;
-    endPoint = path.at(1).back();
-    cout << endPoint << endl << endl;*/
 
     vector<Path> v1, v2, v3;
 
@@ -235,14 +231,20 @@ void filterPaths(Path p){
 }
 
 bool sortCombinations(vector<vector<Path>> c1, vector<vector<Path>> c2){
-    return ((c1.at(0).size() + c1.at(1).size() + c1.at(2).size()) < (c2.at(0).size() + c2.at(1).size() + c2.at(2).size()));
+    return ((c1.at(0).size() * c1.at(1).size() * c1.at(2).size()) < (c2.at(0).size() * c2.at(1).size() * c2.at(2).size()));
 }
 
-void start(vector<Worker*> &workers) {//, vector<vector<vector<int>>> &workersPaths) {
+void start(vector<Worker*> &workers, unsigned int randOrNot) {//, vector<vector<vector<int>>> &workersPaths) {
     //system("cls");
     logo();
     unsigned opt, exp;
     string name;
+
+    fullGraph = createGraph(3, randOrNot);
+    mediumGraph = createGraph(2, randOrNot);
+    easyGraph = createGraph(1, randOrNot);
+
+    createSpots();
 
     cout << "Duracao Maxima do Percurso (Min. 5h, Max 12h)";
     maxTime = answer(5, 12);
@@ -351,7 +353,7 @@ void start(vector<Worker*> &workers) {//, vector<vector<vector<int>>> &workersPa
         }
     }
 
-    //sort(combinations.begin(), combinations.end(), sortCombinations);
+    sort(combinations.begin(), combinations.end(), sortCombinations);
     vector<vector<vector<Path>>> combinations2;
     for (auto x: combinations){
         if (x.at(0).size() >= w1)
