@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.o"
-  "CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Files/FileReader.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Graph/Graph.cpp.o"
   "CMakeFiles/Segunda_Entrega.dir/Graph/GraphViewer.cpp.o"

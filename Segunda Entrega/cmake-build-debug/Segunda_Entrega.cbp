@@ -102,12 +102,6 @@
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h">
 			<Option target="Segunda_Entrega"/>
 		</Unit>
-		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.cpp">
-			<Option target="Segunda_Entrega"/>
-		</Unit>
-		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.h">
-			<Option target="Segunda_Entrega"/>
-		</Unit>
 		<Unit filename="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.cpp">
 			<Option target="Segunda_Entrega"/>
 		</Unit>

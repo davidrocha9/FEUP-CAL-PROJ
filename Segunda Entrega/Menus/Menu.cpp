@@ -6,6 +6,8 @@
 #include "pathGenerator.h"
 #include "../Files/FileReader.h"
 #include "connectivity.h"
+#include "timer.h"
+#include "../Graph/GraphViewer.h"
 
 Graph fullgraph = createGraph(3, 1);
 Graph mediumgraph = createGraph(2, 1);
@@ -16,15 +18,18 @@ void mainMenu(){
     unsigned int opt;
     vector<Worker*> workers;
 
-    srand(time(NULL));
+    vector<int> v;
+    graphDisplay gd(fullgraph, 1920, 1080);
 
+    srand(time(NULL));
     do{
         logo();
         cout << " 1 - Iniciar Percurso" << endl;
         cout << " 2 - Conectividade" << endl;
-        cout << " 2 - Sair" << endl;
+        cout << " 3 - Visualizar Mapa" << endl << endl;
+        cout << " 4 - Sair" << endl;
 
-        opt = answer(1,2);
+        opt = answer(1,4);
         cin.ignore(1000, '\n');
 
         unsigned int randOrNot, difficulty;
@@ -55,6 +60,10 @@ void mainMenu(){
                 }
                 break;
             case 3:
+                gd.showConnectivity(v);
+                getchar();
+                break;
+            case 4:
                 leave();
                 return;
             default:

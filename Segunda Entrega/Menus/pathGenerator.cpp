@@ -10,6 +10,7 @@
 #include "../Files/FileReader.h"
 #include "Path.h"
 #include "math.h"
+#include "timer.h"
 
 vector<int> restaurants;
 vector<int> entrances;
@@ -27,6 +28,7 @@ unsigned int startPoint, endPoint, restaurantID;
 
 unsigned int maxTime;
 
+// Inicia os pontos que sao restaurantes/entradas/saidas
 void createSpots(){
     for (auto x: fullGraph.getVertexSet()){
         if (x->getType() == "restaurant\r")
@@ -40,6 +42,7 @@ void createSpots(){
 
 }
 
+// Calcula o caminho desde o restaurante ate uma saida
 vector<int> getPathBack(int restaurant, vector<int> toRestaurant, Graph graph, int entrance) {
     vector<int> pathBack, visited;
 
@@ -58,6 +61,7 @@ vector<int> getPathBack(int restaurant, vector<int> toRestaurant, Graph graph, i
     return pathBack;
 }
 
+// Gera caminhos
 void choosePaths(Graph graph, unsigned int maxTime, int dif) {
     vector<int> visited;
     vector<int> toRestaurant, fromRestaurant;
@@ -154,10 +158,12 @@ void choosePaths(Graph graph, unsigned int maxTime, int dif) {
     }
 }
 
+// funcao sort consoante a experiencia
 bool sortExperience(Worker* w1, Worker* w2){
     return w1->getExp() < w2->getExp();
 }
 
+// mostra os paths dos trabalhadores
 void showPaths(vector<Worker*> workers){
     char n;
     cout << endl << "Pretende visualizar algum trilho?" << endl;
@@ -190,10 +196,12 @@ void showPaths(vector<Worker*> workers){
     else return;
 }
 
+// funcao sort para ver se o caminho e valido
 bool checkPath(Path path){
     return path.getPath().at(0).back() == restaurantID && path.getPath().at(1).back() == endPoint;
 }
 
+// filtra os caminhos, excluindo os invalidos
 void filterPaths(Path p){
     vector<vector<int>> path = p.getPath();
 
@@ -230,15 +238,20 @@ void filterPaths(Path p){
         combinations.push_back(v4);
 }
 
+// funcao sort
 bool sortCombinations(vector<vector<Path>> c1, vector<vector<Path>> c2){
     return ((c1.at(0).size() * c1.at(1).size() * c1.at(2).size()) < (c2.at(0).size() * c2.at(1).size() * c2.at(2).size()));
 }
 
+// funcao para criar caminhos
 void start(vector<Worker*> &workers, unsigned int randOrNot) {//, vector<vector<vector<int>>> &workersPaths) {
     //system("cls");
     logo();
     unsigned opt, exp;
     string name;
+
+    Timer timer;
+    timer.start();
 
     fullGraph = createGraph(3, randOrNot);
     mediumGraph = createGraph(2, randOrNot);
@@ -372,20 +385,25 @@ void start(vector<Worker*> &workers, unsigned int randOrNot) {//, vector<vector<
     for (size_t x = 0; x < workers.size(); x++){
         switch (workers.at(x)->getExp()) {
             case 1:
-                index = rand() % easyPaths.size() - 1;
+                index = rand() % (easyPaths.size() - 1);
                 temp = easyPaths.at(index).getPath();
                 break;
             case 2:
-                index = rand() % normalPaths.size() - 1;
+                index = rand() % (normalPaths.size() - 1);
                 temp = normalPaths.at(index).getPath();
                 break;
             case 3:
-                index = rand() % hardPaths.size() - 1;
+                index = rand() % (hardPaths.size() - 1);
                 temp = hardPaths.at(index).getPath();
                 break;
         }
         workers.at(x)->setPath(temp);
     }
+
+
+    timer.stop();
+
+    cout << "Tempo Gasto:" << timer.elapsedSeconds() << endl;
 
     showPaths(workers);
 }

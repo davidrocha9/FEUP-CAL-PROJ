@@ -16,12 +16,6 @@ CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
-CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o
- /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
- /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.cpp
- /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.h
- /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
- /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
 CMakeFiles/Segunda_Entrega.dir/Files/FileReader.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.cpp
@@ -48,6 +42,7 @@ CMakeFiles/Segunda_Entrega.dir/Graph/GraphViewer.cpp.o
 CMakeFiles/Segunda_Entrega.dir/Menus/Menu.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/GraphViewer.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.cpp
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.h
@@ -55,6 +50,10 @@ CMakeFiles/Segunda_Entrega.dir/Menus/Menu.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/timer.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/edgetype.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h
 CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.cpp
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.h
@@ -87,6 +86,7 @@ CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.cpp
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/timer.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/edgetype.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h

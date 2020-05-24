@@ -5,6 +5,8 @@
 #include "GraphViewer.h"
 #include "../Menus/Utils.h"
 
+void close();
+
 graphDisplay::graphDisplay(Graph graph, int i, int i1) {
     this->graph = graph;
     this->width = i;
@@ -100,6 +102,7 @@ void graphDisplay::show(vector<vector<int>> paths) {
             id++;
         }
     }
+    this->close();
 }
 
 void graphDisplay::showConnectivity(vector<int> v) {

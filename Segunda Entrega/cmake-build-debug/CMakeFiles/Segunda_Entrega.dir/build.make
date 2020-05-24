@@ -148,22 +148,9 @@ CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.cpp" -o CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.s
 
-CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
-CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o: ../Algorithms/yen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.cpp"
-
-CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.cpp" > CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.i
-
-CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/yen.cpp" -o CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.s
-
 CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o: ../lib/connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o: ../lib/graphviewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o: ../Menus/Worker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o: ../Algorithms/bfs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/bfs.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/Segunda_Entrega.dir/Algorithms/bfs.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o: ../Menus/pathGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/Segunda_Entrega.dir/Menus/pathGenerator.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o: ../Menus/Path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/Segunda_Entrega.dir/Menus/Path.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o: ../Algorithms/dfs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.s: cmake_force
 
 CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o: CMakeFiles/Segunda_Entrega.dir/flags.make
 CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o: ../Menus/connectivity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o -c "/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/connectivity.cpp"
 
 CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.i: cmake_force
@@ -274,7 +261,6 @@ Segunda_Entrega_OBJECTS = \
 "CMakeFiles/Segunda_Entrega.dir/Files/FileReader.cpp.o" \
 "CMakeFiles/Segunda_Entrega.dir/Graph/GraphViewer.cpp.o" \
 "CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.o" \
-"CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o" \
 "CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o" \
 "CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o" \
 "CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o" \
@@ -294,7 +280,6 @@ Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Graph/Graph.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Files/FileReader.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Graph/GraphViewer.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Algorithms/dijkstra.cpp.o
-Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Algorithms/yen.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/lib/connection.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Menus/Worker.cpp.o
@@ -305,7 +290,7 @@ Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Algorithms/dfs.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/Menus/connectivity.cpp.o
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/build.make
 Segunda_Entrega: CMakeFiles/Segunda_Entrega.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Segunda_Entrega"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Segunda_Entrega"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Segunda_Entrega.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
