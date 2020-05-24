@@ -10,6 +10,7 @@
 #include "../Files/FileReader.h"
 #include "Path.h"
 #include "math.h"
+#include "time.h"
 #include "timer.h"
 
 vector<int> restaurants;

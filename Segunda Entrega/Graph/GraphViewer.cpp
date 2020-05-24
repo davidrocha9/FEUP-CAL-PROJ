@@ -4,6 +4,7 @@
 
 #include "GraphViewer.h"
 #include "../Menus/Utils.h"
+#include "time.h"
 
 void close();
 
@@ -102,7 +103,6 @@ void graphDisplay::show(vector<vector<int>> paths) {
             id++;
         }
     }
-    this->close();
 }
 
 void graphDisplay::showConnectivity(vector<int> v) {

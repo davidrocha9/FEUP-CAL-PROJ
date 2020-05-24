@@ -8,6 +8,7 @@
 #include "connectivity.h"
 #include "timer.h"
 #include "../Graph/GraphViewer.h"
+#include "time.h"
 
 Graph fullgraph = createGraph(3, 1);
 Graph mediumgraph = createGraph(2, 1);
