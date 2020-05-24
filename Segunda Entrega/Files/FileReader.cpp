@@ -6,6 +6,7 @@
 #include "../Graph/Graph.h"
 #include "../Graph/GraphViewer.h"
 #include "../Algorithms/dijkstra.h"
+#include "time.h"
 
 using namespace std;
 
