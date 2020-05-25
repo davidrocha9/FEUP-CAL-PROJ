@@ -99,6 +99,9 @@ CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.cpp
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h
 CMakeFiles/Segunda_Entrega.dir/main.cpp.o
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
+ /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
  /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.h

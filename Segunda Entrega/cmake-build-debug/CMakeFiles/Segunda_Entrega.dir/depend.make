@@ -98,6 +98,9 @@ CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o: ../lib/edgetype.h
 CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o: ../lib/graphviewer.cpp
 CMakeFiles/Segunda_Entrega.dir/lib/graphviewer.cpp.o: ../lib/graphviewer.h
 
+CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Algorithms/dfs.h
+CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Algorithms/dijkstra.h
+CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Files/FileReader.h
 CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Graph/Graph.h
 CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Graph/MutablePriorityQueue.h
 CMakeFiles/Segunda_Entrega.dir/main.cpp.o: ../Menus/Menu.h

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h
+../Graph/Graph.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
+
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
 queue
 -
@@ -28,111 +32,33 @@ string
 MutablePriorityQueue.h
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/GraphViewer.h
-vector
--
-cstdio
--
-../lib/graphviewer.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h
-Graph.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-../Graph/Graph.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-../lib/graphviewer.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h
-algorithm
--
-
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/MutablePriorityQueue.h
 vector
 -
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.h
-vector
--
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.h
 
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Utils.h
 ../Graph/Graph.h
 /home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
 
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
-string
--
-vector
--
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.cpp
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/main.cpp
 iostream
 -
-pathGenerator.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
-../Algorithms/dijkstra.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
-Utils.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Utils.h
-../Graph/GraphViewer.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/GraphViewer.h
-../Files/FileReader.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
-Path.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Path.h
-math.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/math.h
-time.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/time.h
-timer.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/timer.h
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/pathGenerator.h
-../Graph/Graph.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Graph/Graph.h
-Worker.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Worker.h
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/timer.h
+fstream
+-
 chrono
 -
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.h
-cstdio
--
-cstdlib
--
-cstring
--
-arpa/inet.h
--
-sys/socket.h
--
-sys/types.h
--
-netdb.h
--
-winsock2.h
--
-string
--
-iostream
--
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/edgetype.h
-
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/graphviewer.h
-unistd.h
--
-winsock2.h
--
-windows.h
--
-stdlib.h
--
-signal.h
--
-string
--
-edgetype.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/edgetype.h
-connection.h
-/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/lib/connection.h
+Menus/Menu.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.h
+Menus/Menu.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Menu.h
+Menus/Utils.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Menus/Utils.h
+Files/FileReader.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Files/FileReader.h
+Algorithms/dijkstra.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dijkstra.h
+Algorithms/dfs.h
+/home/davidrocha/Desktop/Faculdade/CAL-PROJ/Segunda Entrega/Algorithms/dfs.h
 
