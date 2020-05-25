@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// Inicializa os restaurantes, entradas e saidas dependendo do tipo de regiao (aleatoria ou predefinida)
 Graph createGraph(unsigned int dif, unsigned int randOrNot) {
     Graph graph;
     readNodes(graph);
@@ -35,6 +36,7 @@ Graph createGraph(unsigned int dif, unsigned int randOrNot) {
     return graph;
 }
 
+// calcula a dificuldade com base na inclinacao do trilho
 int getDifficulty(double s){
     if (abs(s) < 14)
         return 1;
@@ -43,6 +45,7 @@ int getDifficulty(double s){
     return 3;
 }
 
+// calcula o tempo que demora a percorrer um trilho, assumindo que um trabalhador caminha a uma media de 1.25 m/s
 double getDur(double w, double s){
     if (s > 0)
         return w/1.25;
@@ -50,6 +53,7 @@ double getDur(double w, double s){
         return w/1.75;
 }
 
+// calcula a distancia euclidiana
 double getDistance(int src, int dest, Graph graph, double s){
     Vertex* v1 = graph.findVertex(src);
     Vertex* v2 = graph.findVertex(dest);
@@ -59,6 +63,7 @@ double getDistance(int src, int dest, Graph graph, double s){
     return res / cos(abs(s) * (3.14/180.0));
 }
 
+// calcula a inclinacao do trilho
 double getSlope(){
     double slopeNum = rand() % 30000 + 1;
     double slopeDen = 1000 + rand() % 5000 + 1;
@@ -66,6 +71,7 @@ double getSlope(){
     return slopeNum/slopeDen;
 }
 
+// Le os nodes do ficheiro
 void readNodes(Graph &graph) {
     ifstream file;
     string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_nodes_xy.txt";
@@ -96,6 +102,7 @@ void readNodes(Graph &graph) {
     file.close();
 }
 
+// Le as edges do ficheiro
 void readEdges(Graph &graph, unsigned int dif) {
     ifstream file;
     string fileName = "../Maps/PortugalMaps/Penafiel/penafiel_strong_edges.txt";
@@ -125,6 +132,7 @@ void readEdges(Graph &graph, unsigned int dif) {
     file.close();
 }
 
+// inicializa restaurantes, entradas e saidas
 void readTags(Graph &graph) {
     ifstream file;
     //string fileName = "../Maps/TagExamples/" + cityName + "/t03_tags_" + lowerName + ".txt";
@@ -143,8 +151,6 @@ void readTags(Graph &graph) {
         }
     }
 
-    //graph.findVertex(18)->setType("restaurant\r");
-    //graph.findVertex(1)->setType("entrance\r");
 
     file.close();
 }

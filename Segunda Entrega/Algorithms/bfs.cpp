@@ -4,6 +4,7 @@
 
 #include "bfs.h"
 
+// Algoritmo bfs
 vector<Vertex*> bfs(Graph g, const int &source, const int &dest) {
     vector<Vertex*> res;
     if(source == dest)

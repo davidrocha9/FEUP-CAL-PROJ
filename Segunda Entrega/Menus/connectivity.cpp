@@ -8,6 +8,7 @@
 
 using namespace std;
 
+// Menu de Conectividade, constroi um grafo com base no algoritmo dfs
 void checkConnectivity(Graph graph) {
     cout << "Insira o ID do ponto de inicio" << endl;
     unsigned int opt = 0;

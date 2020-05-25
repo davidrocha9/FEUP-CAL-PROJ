@@ -9,7 +9,7 @@
 #include "Worker.h"
 
 void createSpots();
-vector<int> getPathBack(int restaurant, vector<int> toRestaurant, Graph graph, int entrance);
+vector<vector<int>> getPathBack(int restaurant, vector<int> toRestaurant, Graph graph, int entrance);
 void choosePaths(Graph graph, unsigned int maxTime, int dif);
 bool sortExperience(Worker* w1, Worker* w2);
 void showPaths(vector<Worker*> workers);

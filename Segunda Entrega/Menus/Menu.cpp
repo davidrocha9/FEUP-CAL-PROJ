@@ -10,10 +10,12 @@
 #include "../Graph/GraphViewer.h"
 #include "time.h"
 
+//Grafos de dificuldade 1, 2 e 3
 Graph fullgraph = createGraph(3, 1);
 Graph mediumgraph = createGraph(2, 1);
 Graph easygraph = createGraph(1, 1);
 
+// Menu Principal
 void mainMenu(){
     bool return_menu = true;
     unsigned int opt;

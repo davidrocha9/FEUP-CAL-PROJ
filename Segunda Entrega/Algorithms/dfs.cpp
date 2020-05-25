@@ -4,6 +4,7 @@
 
 #include "dfs.h"
 
+//Algoritmo dfs
 void dfsVisit(Graph graph, Vertex *v, vector<int> &res) {
     v->setVisited(true);
     res.push_back(v->getId());
